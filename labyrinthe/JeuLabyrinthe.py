@@ -1,6 +1,6 @@
 import pygame
 import os
-os.chdir("C://Users//Ridha//Desktop//waw")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 pygame.init()
 from pygame.locals import *
 ecran = pygame.display.set_mode((1050,690))
@@ -371,7 +371,7 @@ image = pygame.image.load("Fond.jpg").convert_alpha()
 
 laby= pygame.image.load("Labyrinthe.jpg").convert_alpha()
 Mur = pygame.image.load('block.jpg').convert_alpha()
-Arrivee= pygame.image.load('Arrivée.png').convert_alpha()
+Arrivee= pygame.image.load('arrivée.png').convert_alpha()
 Zone_Arrivee= Arrivee.get_rect()
 Zone_Arrivee.topleft=game.player.arrivee
 

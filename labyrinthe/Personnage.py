@@ -3,7 +3,7 @@ width=1050
 height=630
 import time
 import os
-os.chdir("C://Users//Ridha//Desktop//waw")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
